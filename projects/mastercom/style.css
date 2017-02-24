@@ -1458,7 +1458,7 @@ td {
   right: -10px;
   height: 20px;
   width: 20px;
-  background: url(../img/ico_close-popup.png) no-repeat 0 0;
+  background: url(img/ico_close-popup.png) no-repeat 0 0;
   opacity: .8; }
   .close-popup:hover {
     cursor: pointer;
