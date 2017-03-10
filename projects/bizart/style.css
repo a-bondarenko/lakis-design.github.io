@@ -130,7 +130,7 @@ strong {
 
 /*Main container*/
 .b-main-container {
-  padding-top: 75px; }
+  padding-top: 65px; }
 
 /*Buttons*/
 .g-button {
@@ -188,18 +188,18 @@ strong {
   position: fixed;
   z-index: 90;
   top: 0;
-  height: 75px;
+  height: 65px;
   width: 100%;
   padding-left: 30px;
   background: #000;
-  line-height: 75px; }
+  line-height: 65px; }
 
 /*Logo*/
 .b-logo {
   float: left; }
   .b-logo__logo {
     color: #fff;
-    font-size: 300%;
+    font-size: 250%;
     font-weight: 900;
     text-transform: uppercase; }
   .b-logo__tagline {
@@ -239,18 +239,18 @@ strong {
     position: absolute;
     top: 0;
     right: 0;
-    width: 75px;
+    width: 65px;
     height: 100%;
     background: #fb6901;
     text-align: center;
-    line-height: 75px;
+    line-height: 65px;
     font-size: 287%; }
 
 /*Primary menu*/
 .b-primary-menu {
   float: right;
-  height: 75px;
-  line-height: 75px;
+  height: 65px;
+  line-height: 65px;
   text-align: right;
   color: #fff; }
   .b-primary-menu ul {
@@ -352,10 +352,10 @@ strong {
   background: #000; }
   .b-related-articles__headline {
     padding-left: 50px;
-    height: 70px;
+    height: 50px;
     color: #fff;
-    line-height: 70px;
-    font-size: 225%;
+    line-height: 50px;
+    font-size: 180%;
     font-weight: 500; }
 
 /*Content*/
@@ -484,8 +484,8 @@ strong {
     left: 0;
     padding: .5em .7em .5em 1em;
     background: #000;
-    font-size: 150%;
-    font-weight: 700;
+    font-size: 130%;
+    font-weight: 500;
     color: #fff;
     line-height: 1.3em; }
   .b-article-preview__tags {
