@@ -407,6 +407,10 @@ strong {
     .b-single-navigation__nextprev:hover {
       background: #3a3a3a;
       cursor: pointer; }
+  .b-single-navigation a {
+    display: block;
+    width: 100%;
+    height: 100%; }
 
 /*Related Articles*/
 .b-related-articles {
@@ -509,6 +513,8 @@ strong {
     .b-content-sidebar {
       float: none;
       width: 100%; } }
+  .b-content-sidebar .g-button {
+    font-size: 120%; }
 
 .b-content-sidebar-item {
   padding-top: 15px;
@@ -871,8 +877,6 @@ strong {
     max-height: 500px; }
   .b-medseo__clients {
     margin-bottom: 30px; }
-  .b-medseo .g-button {
-    font-size: 120%; }
 
 .b-medseo-slider__navigation {
   position: absolute;
