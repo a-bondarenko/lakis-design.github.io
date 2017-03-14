@@ -139,7 +139,7 @@ strong {
   background: #fb6901;
   color: #fff;
   font-size: 150%;
-  font-weight: 600;
+  font-weight: 500;
   line-height: normal; }
   .g-button:hover {
     cursor: pointer; }
@@ -193,10 +193,16 @@ strong {
   padding-left: 30px;
   background: #000;
   line-height: 65px; }
+  @media only screen and (max-width: 992px) {
+    .b-header {
+      height: auto; } }
 
 /*Logo*/
 .b-logo {
   float: left; }
+  @media only screen and (max-width: 992px) {
+    .b-logo {
+      float: none; } }
   .b-logo__logo {
     color: #fff;
     font-size: 250%;
@@ -208,15 +214,33 @@ strong {
     color: #fff;
     font-weight: 300;
     line-height: normal; }
+    @media only screen and (max-width: 1200px) {
+      .b-logo__tagline {
+        margin-left: 10px;
+        font-size: 87.5%; } }
+    @media only screen and (max-width: 480px) {
+      .b-logo__tagline {
+        display: none; } }
 
 /*Header Phone*/
 .b-header-phone {
   position: relative;
   float: right;
-  width: 320px;
   padding-right: 90px;
   padding-left: 15px;
   color: #fff; }
+  @media only screen and (max-width: 1200px) {
+    .b-header-phone {
+      padding-right: 75px;
+      padding-left: 5px;
+      text-align: right; } }
+  @media only screen and (max-width: 992px) {
+    .b-header-phone {
+      display: none;
+      float: none;
+      text-align: center;
+      padding-left: 0;
+      padding-right: 0; } }
   .b-header-phone:hover {
     cursor: pointer; }
     .b-header-phone:hover .b-header-phone__callback-text span {
@@ -227,11 +251,23 @@ strong {
     line-height: normal; }
   .b-header-phone__number {
     font-size: 150%; }
+    @media only screen and (max-width: 1200px) {
+      .b-header-phone__number {
+        font-size: 125%; } }
+    @media only screen and (max-width: 992px) {
+      .b-header-phone__number {
+        font-size: 150%; } }
   .b-header-phone__callback-text {
     padding-left: 20px;
     color: #ff9244;
     font-weight: 300;
     font-size: 93.75%; }
+    @media only screen and (max-width: 1200px) {
+      .b-header-phone__callback-text {
+        font-size: 87.5%; } }
+    @media only screen and (max-width: 992px) {
+      .b-header-phone__callback-text {
+        font-size: 100%; } }
     .b-header-phone__callback-text span {
       display: inline-block;
       border-bottom: 1px dotted #ff9244; }
@@ -245,6 +281,9 @@ strong {
     text-align: center;
     line-height: 65px;
     font-size: 287%; }
+    @media only screen and (max-width: 992px) {
+      .b-header-phone__icon {
+        display: none; } }
 
 /*Primary menu*/
 .b-primary-menu {
@@ -253,22 +292,43 @@ strong {
   line-height: 65px;
   text-align: right;
   color: #fff; }
+  @media only screen and (max-width: 992px) {
+    .b-primary-menu {
+      display: none;
+      float: none;
+      height: auto; } }
   .b-primary-menu ul {
     display: inline-block; }
+    @media only screen and (max-width: 992px) {
+      .b-primary-menu ul {
+        display: block; } }
   .b-primary-menu li {
     float: left; }
+    @media only screen and (max-width: 992px) {
+      .b-primary-menu li {
+        float: none;
+        text-align: center; } }
   .b-primary-menu a {
     display: inline-block;
     padding-left: 15px;
     padding-right: 15px;
     border-left: 1px solid #5e5e5e;
-    border-right: 1px solid #5e5e5e;
-    font-weight: 300;
     text-transform: uppercase; }
+    @media only screen and (max-width: 1200px) {
+      .b-primary-menu a {
+        padding-left: 7px;
+        padding-right: 7px;
+        font-size: 87.5%; } }
+    @media only screen and (max-width: 992px) {
+      .b-primary-menu a {
+        font-size: 100%;
+        border: none !important; } }
     .b-primary-menu a:hover {
       color: #ff9244;
       -webkit-box-shadow: 0px 3px 50px 0px rgba(252, 133, 49, 0.1);
               box-shadow: 0px 3px 50px 0px rgba(252, 133, 49, 0.1); }
+  .b-primary-menu li:last-child a {
+    border-right: 1px solid #5e5e5e; }
 
 /*Active menu item*/
 .current_page_item a,
@@ -286,14 +346,13 @@ strong {
 /*Toggle menu*/
 .b-toggle-menu {
   position: absolute;
-  display: none;
-  top: 34px;
-  right: 15px;
-  width: 27px;
-  height: 22px;
-  background-image: url(img/ico_toggle-menu.png);
-  background-repeat: no-repeat;
-  background-position: 0 0; }
+  top: 0;
+  right: 0;
+  width: 65px;
+  height: 65px;
+  font-size: 150%;
+  color: #ff9244;
+  line-height: 65px; }
   @media only screen and (max-width: 992px) {
     .b-toggle-menu {
       display: block; } }
@@ -367,6 +426,10 @@ strong {
   margin-right: auto;
   padding: 40px 50px;
   background: #fff; }
+  @media only screen and (max-width: 992px) {
+    .b-content-main-container {
+      padding-left: 15px;
+      padding-right: 15px; } }
 
 .b-content {
   /*Table*/ }
@@ -585,19 +648,110 @@ strong {
     font-family: "Roboto", Helvetica, Arial, sans-serif;
     font-size: 93.75%; }
 
+/*Contacts*/
+.b-contacts {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  z-index: 100;
+  width: 300px;
+  min-height: 100vh;
+  padding: 25px 20px;
+  background: #000;
+  -webkit-transition: all .4s;
+  transition: all .4s; }
+  .b-contacts__close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 150%;
+    color: #fff;
+    opacity: .8; }
+    .b-contacts__close:hover {
+      cursor: pointer;
+      opacity: 1; }
+  .b-contacts__headline {
+    margin-bottom: 25px;
+    font-weight: 500;
+    font-size: 220%;
+    color: #fff; }
+
+.b-contacts-phone {
+  margin-bottom: 25px;
+  color: #fff; }
+  .b-contacts-phone__headline {
+    margin-bottom: 7px;
+    font-size: 150%;
+    font-weight: 500; }
+  .b-contacts-phone__number {
+    font-size: 120%;
+    font-weight: 300;
+    margin-bottom: 15px; }
+  .b-contacts-phone .g-button {
+    font-size: 120%;
+    padding: .3em .8em; }
+
+.b-contacts-address {
+  margin-bottom: 15px;
+  color: #fff; }
+  .b-contacts-address__headline {
+    margin-bottom: 7px;
+    font-size: 150%;
+    font-weight: 500; }
+  .b-contacts-address__address {
+    margin-bottom: 10px;
+    line-height: 1.3em;
+    font-weight: 300; }
+
+.b-contacts-form legend {
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: 120%; }
+
+.b-contacts-form input {
+  display: block;
+  padding: .5em .8em;
+  margin-bottom: 10px;
+  background: #fff; }
+
+.b-contacts-form textarea {
+  display: block;
+  width: 220px;
+  height: 70px;
+  padding: .5em .8em;
+  margin-bottom: 10px;
+  background: #fff; }
+
+.b-contacts-form .g-button {
+  font-size: 120%;
+  padding: .3em .8em; }
+
+.open-contacts {
+  right: 0; }
+
 /*Footer*/
 .b-footer {
   height: 55px;
   padding: 0 30px;
   background: #000;
   line-height: 55px; }
+  @media only screen and (max-width: 768px) {
+    .b-footer {
+      height: auto;
+      line-height: 40px; } }
   .b-footer__logo {
     float: left;
     font-size: 112.5%;
     color: #fff;
     font-weight: 300; }
+    @media only screen and (max-width: 768px) {
+      .b-footer__logo {
+        float: none; } }
   .b-footer__social {
     float: right; }
+    @media only screen and (max-width: 768px) {
+      .b-footer__social {
+        float: none; } }
     .b-footer__social li {
       float: left;
       margin-right: 15px;
@@ -606,3 +760,84 @@ strong {
       opacity: .7; }
       .b-footer__social li:hover {
         opacity: 1; }
+
+/*Medseo*/
+.b-medseo .b-content__wallpaper {
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  padding: 80px 20px; }
+  @media only screen and (max-width: 992px) {
+    .b-medseo .b-content__wallpaper {
+      padding-left: 0;
+      padding-right: 0; } }
+  @media only screen and (max-width: 768px) {
+    .b-medseo .b-content__wallpaper {
+      padding-top: 15px;
+      padding-right: 15px; } }
+
+.b-medseo .b-content__wallpaper img {
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto; }
+  @media only screen and (max-width: 768px) {
+    .b-medseo .b-content__wallpaper img {
+      position: static; } }
+
+.b-medseo-headline {
+  margin-bottom: 20px; }
+  .b-medseo-headline__text h1 {
+    margin-bottom: 10px;
+    font-size: 250%;
+    line-height: 1.1em;
+    font-weight: 700;
+    letter-spacing: .01em;
+    text-transform: uppercase; }
+    @media only screen and (max-width: 992px) {
+      .b-medseo-headline__text h1 {
+        font-size: 180%; } }
+  .b-medseo-headline__text p {
+    font-size: 150%; }
+
+.b-medseo-form {
+  position: relative;
+  z-index: 20;
+  text-align: center; }
+  .b-medseo-form form {
+    width: 30%;
+    margin-left: auto;
+    padding: 15px;
+    background: #fff; }
+    @media only screen and (max-width: 768px) {
+      .b-medseo-form form {
+        width: 100%; } }
+  .b-medseo-form legend {
+    margin-bottom: 10px;
+    color: #fb6901;
+    font-size: 120%;
+    font-weight: 700;
+    line-height: 1.2em; }
+  .b-medseo-form input {
+    display: block;
+    padding: .6em .9em;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    background: #eaeaea;
+    font-size: 100%; }
+  .b-medseo-form button {
+    width: 100%; }
+
+.table {
+  display: table;
+  width: 100%;
+  height: 100%;
+  min-height: 100%; }
+
+.tablecell {
+  display: table-cell;
+  vertical-align: middle; }

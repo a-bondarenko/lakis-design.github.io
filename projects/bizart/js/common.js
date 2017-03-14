@@ -13,9 +13,18 @@ $(function () {
 
 	/*Открыть/закрыть меню*/
 	$('.b-toggle-menu').click(function(){
-		$(this).toggleClass('b-toggle-menu--close');
-		$('.b-primary-menu, .b-call-back').slideToggle();
+		$('.b-toggle-menu .open').toggleClass('hidden');
+		$('.b-toggle-menu .close').toggleClass('hidden');
+		$('.b-primary-menu, .b-header-phone').slideToggle();
 	});
+
+	/*Открыть контакты*/
+	$('#open-contacts').click(function(){
+		$('.b-contacts').addClass('open-contacts');
+	});
+	$('.b-contacts__close').click(function(){
+		$('.b-contacts').removeClass('open-contacts');
+	})
 
 	/*Слайдер*/
 	$(function(){
@@ -51,6 +60,12 @@ $(function () {
 		$('body').toggleClass('no-scroll');
 		$('.b-header').toggleClass('header-noscroll')
 	});
+
+	/*Смена форм медсео*/
+	$('.b-medseo-form__checklist button').click(function(){
+		$('.b-medseo-form__checklist').addClass('hidden');
+		$('.b-medseo-form__callback').removeClass('hidden');
+	})
 
 	/*Ajax форма*/
 	$("#call-back-form, #pop-up-callback").submit(function() {
