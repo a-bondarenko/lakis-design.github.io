@@ -82,4 +82,11 @@ $(function () {
 		return false;
 	});
 
+	/*Показать подложку услуги*/
+	$('.b-service').mouseenter(function() {
+		$(this).addClass('show-backside');
+	});
+	$('.b-service').mouseleave(function() {
+		$(this).removeClass('show-backside');
+	});
 })

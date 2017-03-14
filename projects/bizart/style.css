@@ -324,6 +324,7 @@ strong {
         font-size: 100%;
         border: none !important; } }
     .b-primary-menu a:hover {
+      cursor: pointer;
       color: #ff9244;
       -webkit-box-shadow: 0px 3px 50px 0px rgba(252, 133, 49, 0.1);
               box-shadow: 0px 3px 50px 0px rgba(252, 133, 49, 0.1); }
@@ -841,3 +842,143 @@ strong {
 .tablecell {
   display: table-cell;
   vertical-align: middle; }
+
+/*Services*/
+.b-services-head {
+  height: 450px; }
+  @media only screen and (max-width: 992px) {
+    .b-services-head {
+      height: auto; } }
+  .b-services-head__intro {
+    position: relative;
+    width: 40%;
+    height: 100%;
+    float: left;
+    background: #000;
+    color: #fff; }
+    @media only screen and (max-width: 992px) {
+      .b-services-head__intro {
+        float: none;
+        width: 100%; } }
+  .b-services-head__intro-wrapp {
+    position: absolute;
+    left: 30px;
+    bottom: 0;
+    padding: 15px; }
+    @media only screen and (max-width: 992px) {
+      .b-services-head__intro-wrapp {
+        position: static; } }
+  .b-services-head__headline {
+    margin-bottom: 15px;
+    font-size: 300%;
+    font-weight: 700; }
+  .b-services-head__text {
+    font-size: 112.5%;
+    font-weight: 300;
+    line-height: 1.2em; }
+  .b-services-head__wallpaper {
+    position: relative;
+    height: 100%;
+    float: right;
+    width: 60%;
+    overflow: hidden; }
+    @media only screen and (max-width: 992px) {
+      .b-services-head__wallpaper {
+        float: none;
+        height: 300px;
+        width: 100%; } }
+    .b-services-head__wallpaper img {
+      position: absolute;
+      z-index: 10;
+      right: 0;
+      top: 0; }
+  .b-services-head__wallpaper-gradient {
+    position: absolute;
+    z-index: 20;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: -webkit-gradient(linear, left top, right top, from(black), color-stop(50%, rgba(239, 1, 124, 0)));
+    background: -webkit-linear-gradient(left, black 0%, rgba(239, 1, 124, 0) 50%);
+    background: linear-gradient(to right, black 0%, rgba(239, 1, 124, 0) 50%); }
+    @media only screen and (max-width: 992px) {
+      .b-services-head__wallpaper-gradient {
+        background: none; } }
+
+.b-service-container {
+  background: #151515; }
+
+.b-service {
+  position: relative;
+  float: left;
+  width: 33.333%;
+  overflow: hidden; }
+  @media only screen and (max-width: 1200px) {
+    .b-service {
+      width: 50%; } }
+  @media only screen and (max-width: 768px) {
+    .b-service {
+      width: 100%; } }
+  .b-service:hover {
+    cursor: pointer; }
+  .b-service__wrapper {
+    display: block;
+    padding-bottom: 60%; }
+  .b-service img {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto; }
+  .b-service__headline {
+    position: absolute;
+    z-index: 20;
+    left: 0;
+    max-width: 80%;
+    bottom: 20px;
+    background: #191919;
+    padding: .4em 3% .4em 6%;
+    color: #fff;
+    font-size: 150%;
+    font-weight: 500;
+    opacity: 1;
+    -webkit-transition: all .1s;
+    transition: all .1s; }
+  .b-service__backside {
+    position: absolute;
+    z-index: 30;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px 5%;
+    background: #191919;
+    color: #fff;
+    -webkit-transition: all .2s;
+    transition: all .2s; }
+    @media only screen and (max-width: 992px) {
+      .b-service__backside {
+        display: none; } }
+    .b-service__backside h3 {
+      font-size: 150%;
+      font-weight: 500;
+      margin-bottom: 7px; }
+    .b-service__backside p {
+      font-weight: 300; }
+  .b-service__price, .b-service__term {
+    margin-top: 5px;
+    font-weight: 400; }
+    .b-service__price strong, .b-service__term strong {
+      color: #ff9244; }
+  .b-service__term {
+    margin-bottom: 7px; }
+  .b-service .g-button {
+    padding: .2em .8em; }
+
+.show-backside .b-service__headline {
+  opacity: 0; }
+
+.show-backside .b-service__backside {
+  bottom: 0; }
