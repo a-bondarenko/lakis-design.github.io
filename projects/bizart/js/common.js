@@ -43,6 +43,23 @@ $(function () {
 		});
 	});
 
+	/*Слайдер клиентов*/
+	$(function(){
+
+		var slider = $('.b-medseo__clients');
+
+		slider.owlCarousel({
+
+			navigation : true,
+			singleItem:true,
+			autoHeight : true,
+			navigationText: [
+			'<span class="b-medseo-slider__navigation b-medseo-slider__navigation--prev"><i class="fa fa-angle-left" aria-hidden="true"></i></span>',
+			'<span class="b-medseo-slider__navigation b-medseo-slider__navigation--next"><i class="fa fa-angle-right" aria-hidden="true"></i></span>'
+			],
+		});
+	});
+
 	/*Окно обратной связи*/
 	$('.open-popup-callback').click(function(){
 		var popup = $('.b-popup-callback').closest('.b-popup-wrapper');
