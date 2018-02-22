@@ -1,0 +1,86 @@
+.b-article-contents {
+    padding: 16px 0;
+    border-bottom: : 1px solid #cecece;
+}
+
+.b-article-contents__title {
+    font-size: 20px;
+    color: #000;
+}
+
+.b-article-contents__title span {
+    position: relative;
+    display: inline-block;
+    color: #000;
+}
+
+.b-article-contents__title span:hover {
+    border-color: 1px solid #00afff;
+}
+
+
+.b-article-contents__list {
+    margin-top: 15px;
+    font-size: 93.75%
+}
+
+.b-article-contents__list a {
+    font-weight: 400;
+    color: #00afff;
+    display: inline-block;
+    border-bottom: 1px dotted transparent;
+}
+
+.b-article-contents__list a:hover {
+    color: #5dccff;
+    border-color: #5dccff;
+}
+
+.b-article-contents__list .top {
+    margin-top: 2px;
+    margin-bottom: 7px
+}
+
+.b-article-contents__list .sub {
+    margin-bottom: 5px
+}
+
+ .b-article-contents .contents {
+    padding-left: 0;
+    list-style-type: none!important;
+    counter-reset: list
+}
+
+ .b-article-contents .contents strong {
+    font-weight: 400;
+ }
+
+.contents li:before {
+    color: #555
+}
+
+.contents li.top {
+    counter-increment: list;
+    counter-reset: list1
+}
+
+.contents li.top:before {
+    content: counter(list) ". "
+}
+
+.contents li.sub_1 {
+    counter-increment: list1;
+    counter-reset: list2
+}
+
+.contents li.sub_1:before {
+    content: counter(list) "." counter(list1) ". "
+}
+
+.contents li.sub_2 {
+    counter-increment: list2
+}
+
+.contents li.sub_2:before {
+    content: counter(list) "." counter(list1) "." counter(list2) ". "
+}

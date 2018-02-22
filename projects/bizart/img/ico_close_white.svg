@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="25px" height="25px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 25 25"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+
+ <g>
+  <polygon fill="#fff" points="23,0 25,2 15,13 25,23 23,25 13,15 2,25 0,23 11,13 0,2 2,0 13,11 "/>
+ </g>
+</svg>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2017 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="53mm" height="53mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 5300 5300"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str6 {stroke:#0B8542;stroke-width:200}
+    .str4 {stroke:#E5322C;stroke-width:390}
+    .str5 {stroke:#F5AF29;stroke-width:250}
+    .str3 {stroke:#E3322C;stroke-width:279.99;stroke-linecap:round}
+    .str0 {stroke:#E5322C;stroke-width:350;stroke-linecap:round}
+    .str2 {stroke:#E3322C;stroke-width:320;stroke-linecap:round;stroke-linejoin:round}
+    .str1 {stroke:#E5332C;stroke-width:300;stroke-linecap:round;stroke-linejoin:round}
+    .fil1 {fill:none}
+    .fil3 {fill:#4A1F1B}
+    .fil2 {fill:#E3322C}
+    .fil0 {fill:#E5322C}
+   ]]>
+  </style>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_696084648">
+   <path class="fil0" d="M16063 1911l-2 927c0,208 367,204 367,0l0 -723c0,-33 39,-76 80,-76l199 0c143,0 174,229 -55,238 -182,7 -151,218 -61,356l178 270c135,205 447,20 302,-198l-152 -230c400,-329 176,-761 -211,-761l-465 0c-124,0 -180,73 -180,197z"/>
+   <g>
+    <line class="fil1 str0" x1="13746" y1="1888" x2="14515" y2= "1888" />
+    <line class="fil1 str0" x1="14138" y1="2817" x2="14138" y2= "1946" />
+   </g>
+   <path class="fil1 str1" d="M17959 2395l475 3c0,173 -182,449 -473,449 -340,0 -504,-273 -504,-489 0,-252 204,-490 484,-490 184,0 289,89 316,110"/>
+   <g>
+    <polyline class="fil1 str2" points="19623,1879 18904,1879 18904,2834 19606,2834 "/>
+    <line class="fil1 str3" x1="19262" y1="2373" x2="19593" y2= "2373" />
+   </g>
+   <g>
+    <line class="fil1 str0" x1="20076" y1="1888" x2="20845" y2= "1888" />
+    <line class="fil1 str0" x1="20468" y1="2817" x2="20468" y2= "1946" />
+   </g>
+   <path class="fil2" d="M14653 2851l514 -1082c17,-35 50,-57 89,-57 39,0 73,20 90,55l542 1082c16,32 14,67 -4,97 -19,30 -49,47 -85,47l-1056 0c-35,0 -66,-17 -85,-47 -19,-30 -21,-64 -6,-96zm362 -174l221 -473c14,-29 35,-31 51,1l243 478c19,38 -4,55 -29,55l-461 0c-39,0 -39,-32 -25,-62z"/>
+  </g>
+  <g id="_696082728">
+   <path class="fil1 str4" d="M2661 5039c-1326,0 -2401,-1075 -2401,-2401 0,-1326 1075,-2401 2401,-2401m2401 2401c0,1326 -1075,2401 -2401,2401"/>
+   <path class="fil1 str5" d="M2661 4549c-1055,0 -1910,-855 -1910,-1910l0 -2m1910 -1908c1055,0 1910,855 1910,1910 0,1055 -855,1910 -1910,1910"/>
+   <path class="fil1 str6" d="M2661 4047c-778,0 -1409,-631 -1409,-1409 0,-778 631,-1409 1409,-1409 778,0 1409,631 1409,1409"/>
+   <polygon class="fil3" points="4288,908 2501,2846 1441,1794 2668,3889 2778,3686 "/>
+  </g>
+ </g>
+</svg>
